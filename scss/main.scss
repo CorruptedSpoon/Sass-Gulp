@@ -1,3 +1,13 @@
+@use 'sass:math';
+@use 'reset';
+
+$contrastColor: blue;
+$appWidth: 400px;
+
+@function calcDivMargin($width) {
+  @return math.div($width, 4);
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -6,17 +16,17 @@ html, body {
 }
 
 #app {
-  width: 50%;
+  width: $appWidth;
   margin: 0 auto;
   text-align: center; 
 }
 
 #app div {
-  margin-top: 50px; 
+  margin-top: calcDivMargin($appWidth); 
 }
   
 #app div h1 {
-  color: slategrey; 
+  color: $contrastColor; 
 }
 
 #app div ul {
@@ -32,5 +42,5 @@ html, body {
 }
 
 #app div h2 i {
-  color: slategrey; 
+  color: $contrastColor; 
 }

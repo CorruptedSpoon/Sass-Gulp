@@ -8,7 +8,12 @@
     "nodemon": "nodemon -e js,html,css --watch ./hosted --watch ./server --watch ./hosted ./server/app.js ",
     "start": "node ./server/app.js",
     "pretest": "eslint ./server --fix",
-    "test": "echo \"Tests complete\""
+    "test": "echo \"Tests complete\"",
+    "sass": "gulp sassTask",
+    "lint": "gulp lintTask",
+    "jsTask": "gulp jsTask",
+    "build": "gulp build",
+    "watch": "gulp watch"
   },
   "author": "Cody Van De Mark / Austin Willoughby",
   "license": "Apache 2.0",
@@ -25,7 +30,6 @@
     "@babel/core": "^7.19.6",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^9.1.0",
-    "dart-sass": "^1.25.0",
     "eslint": "^8.26.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",

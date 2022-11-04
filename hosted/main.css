@@ -1,0 +1,41 @@
+body {
+  background-color: red;
+  color: blue;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#app div {
+  margin-top: 100px;
+}
+
+#app div h1 {
+  color: blue;
+}
+
+#app div ul {
+  width: 200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#app div ul li {
+  margin-top: 10px;
+  word-break: break-all;
+  font-size: 1.1em;
+}
+
+#app div h2 i {
+  color: blue;
+}
